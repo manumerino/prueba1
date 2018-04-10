@@ -3,6 +3,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\VarDumper;
 
 $this->title = 'Register';
 $this->params['breadcrumbs'][] = $this->title;
@@ -20,9 +21,11 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-        <?= $form->field($model, 'user')->textInput(['autofocus' => true]) ?>
+        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
         <?= $form->field($model, 'password')->passwordInput() ?>
+
+        <?= $form->field($model, 'repeat_password')->passwordInput() ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
@@ -31,4 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
     <?php ActiveForm::end(); ?>
+
+    <?php
+
+
+
+      //VarDumper::dump($);
+    ?>
 </div>
