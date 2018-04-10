@@ -1,0 +1,22 @@
+create database blog_hardware;
+use blog_hardware;
+create table procesadores (
+ID int,
+Familia varchar(6),
+Generacion varchar (10),
+Frecuencia varchar (10),
+Nucleos int(4),
+Precio decimal(50)
+);
+
+create table tarjetas_graficas (
+ID int,
+Familia varchar(10),
+Fabricante varchar(20),
+Modelo varchar (20),
+Frecuencia varchar (10),
+Arquitectura varchar (20),
+VRAM varchar (10),
+Precio decimal(50)
+);
+
